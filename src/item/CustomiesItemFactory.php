@@ -55,7 +55,7 @@ final class CustomiesItemFactory {
 	 * item components if present.
 	 * @phpstan-param class-string $className
 	 */
-	public function registerItem(string $className, string $identifier, string $name, string $icon = "frost" ?CreativeCategory $category = null): void {
+	public function registerItem(string $className, string $identifier, string $name, string $icon = "frost", ?CreativeCategory $category = null): void {
 		if($className !== Item::class) {
 			Utils::testValidInstance($className, Item::class);
 		}
